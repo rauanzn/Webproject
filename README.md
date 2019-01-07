@@ -1,2 +1,2 @@
-# Webproject
-Full web Project of fast-food center.
+# Project
+web programming project

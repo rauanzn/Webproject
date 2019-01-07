@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    background-color: red;
+}
+.navbar {
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    padding-right: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.navbar a:hover{
+    background-color: #E74C3C;
+}
+
+.navbar .all a{
+    font-size: 17px;
+    color: white; 
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+.all:last-child {
+  margin-left: auto;
+  display: flex;
+}
+
+.badge{
+    margin-left: 50px; 
+    width: 50px; 
+    height: 50px;
+}
+.icon{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar a{display: none;}
+    .all .icon {
+       float: right;
+        display: block;
+    }
+    .all.responsive {
+        position: relative; 
+        display: inline-block;
+        color: black; 
+        background-color: #E74C3C;}
+    .all.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+  .all.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.burgers{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    flex-wrap: wrap;
+}
+.burgers .burger:hover{
+    border: 2px solid black;
+}
+.burgers .burger{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20em;
+    padding: 5px;
+}
+.burgers .burger img{
+    height: 50%;
+    width: 100%;
+}
+.burgers .burger .description{
+    position: relative;
+    height: 50%;
+    background-color: #212121;
+    font-family: 'Pacifico',cursive;
+    font-size: 30px;
+    color:white;
+    border-top: 1px solid #ffe57f;
+}
+.burgers .burger a{
+    position: absolute;
+    display: inline-block;
+    color:white;
+    bottom: 0;
+}
+footer{
+    display: flex;
+    flex: 1;
+    background-color: black;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    position: fixed;
+    display: flex;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    padding: 10px;
+}
+footer section div{
+    padding: 15px;
+}
+footer section{
+    display: flex;
+    width: 30%;
+    justify-content: center
+}
+footer div:hover{
+    border: 1px solid white;
+}
+footer div{
+    border: 1px solid black;
+}
+footer img{
+    width: 40px;
+    height: 40px
+}

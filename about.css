@@ -1,0 +1,150 @@
+html{overflow-y:scroll;} 
+
+body{margin:0; padding:0; font-size:13px; font-family:'Comic Sans MS', 'Comic Sans', cursive;
+ background-color:#232323;}
+.navbar {
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    padding-right: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.navbar a:hover{
+    background-color: #E74C3C;
+}
+
+.navbar .all a{
+    font-size: 17px;
+    color: white; 
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+.all:last-child {
+  margin-left: auto;
+  display: flex;
+}
+
+.badge{
+    margin-left: 50px; 
+    width: 50px; 
+    height: 50px;
+}
+.icon{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar a{display: none;}
+    .all .icon {
+       float: right;
+        display: block;
+    }
+    .all.responsive {
+        position: relative; 
+        display: inline-block;
+        color: black; 
+        background-color: #E74C3C;}
+    .all.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+  .all.responsive a {
+   }
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.clear:after{content:"."; display:block; clear:both;}
+
+ figure{display:block; margin:0; padding:0;}
+
+.row2{ background-color:#FFFFFF;}
+
+#container{width:960px; margin:0 auto;}
+
+.one_quarter{display:block; float:left; margin:0 20px 0 0;}
+.one_quarter{width:225px;}
+
+.lastbox{margin-right:0;}
+
+
+#container{padding:30px 0;}
+#container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
+#container #latest figure{padding:5px; border:2px solid black; text-align:center;}
+
+
+#container #shout{padding:0 0 20px 0; border-bottom:2px solid black; text-align:center;}
+#container #shout p{font-size:20px; margin:0; padding:0; line-height:1.8em;}
+
+#container #content{float:left; width:630px;}
+
+
+#container #content #services ul li{display:block; width:100%; margin-bottom:30px;}
+
+#container #content #services ul li article figure img{float:left; width:200px; height:180px; margin:0; padding:5px; border:2px solid black;}
+#container #content #services ul li article figure figcaption{display:block; float:right; width:60%;}
+
+
+footer{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    position: fixed;
+    display: flex;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    padding: 10px;
+}
+footer section div{
+    padding: 15px;
+}
+footer section{
+    display: flex;
+    width: 100%;
+    justify-content: center
+}
+footer div:hover{
+    border: 1px solid white;
+}
+footer div{
+    border: 1px solid black;
+}
+footer img{
+    width: 40px;
+    height: 40px
+}
+@media screen and (max-width:800px) {
+    #container {
+    width: 100%;}
+  }
+  @media screen and (max-width:800px) {
+      .readmore{
+        margin-right: 250px;
+      }
+      .qwe{
+        display: none;
+      }
+      h2{
+        font-size: 12px;
+      }
+      .qq{
+        font-size: 10px;
+      }
+      footer{
+         outline: none;
+      }
+  }
